@@ -4,21 +4,24 @@ import LayoutDefault from '../components/LayoutDefault.vue'
 
 <template>
   <LayoutDefault>
-    <section class="flex items-center justify-between px-10 py-20">
-      <div class="flex flex-col justify-between h-full">
+    <section
+      class="flex flex-col md:flex-row items-center justify-between px-6 md:px-10 py-10 md:py-20 gap-6"
+    >
+      <div class="flex flex-col justify-between w-full md:w-1/2 text-center md:text-left">
         <div>
-          <h1 class="text-3xl font-bold mb-6">Cari tau harga rumah anda</h1>
+          <h1 class="items-center text-2xl sm:text-3xl font-bold mb-4">
+            Cari tahu harga rumah Anda
+          </h1>
         </div>
-        <button class="mt-10 bg-[#138fac] text-white py-2 px-6 rounded-xl hover:bg-yellow-500">
-          <!-- <button class="mt-10 bg-primary text-white py-2 px-6 rounded-xl hover:bg-yellow-500"> -->
-          <!-- <button class="mt-10 bg-red-500 text-white py-2 px-6 rounded-xl hover:bg-yellow-500"> -->
+        <router-link
+          to="/prediksi"
+          class="inline-block mt-6 bg-[#138fac] text-white py-2 px-6 rounded-xl hover:bg-yellow-500 transition-colors duration-300"
+        >
           Coba Sekarang
-        </button>
+        </router-link>
       </div>
 
-      <div class="bg-[#138fac] w-[400px] h-[250px] rounded-2xl"></div>
-      <!-- <div class="bg-primary w-[400px] h-[250px] rounded-2xl"></div> -->
-      <!-- <div class="bg-red-500 w-[400px] h-[250px] rounded-2xl"></div> -->
+      <div class="w-full md:w-[400px] h-[200px] md:h-[250px] bg-[#138fac] rounded-2xl"></div>
     </section>
   </LayoutDefault>
 </template>
