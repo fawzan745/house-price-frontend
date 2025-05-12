@@ -4,24 +4,18 @@ import LayoutDefault from '../components/LayoutDefault.vue'
 
 <template>
   <LayoutDefault>
-    <section
-      class="flex flex-col md:flex-row items-center justify-between px-6 md:px-10 py-10 md:py-20 gap-6"
-    >
-      <div class="flex flex-col justify-between w-full md:w-1/2 text-center md:text-left">
-        <div>
-          <h1 class="items-center text-2xl sm:text-3xl font-bold mb-4">
-            Cari tahu harga rumah Anda
-          </h1>
+    <div class="bg-[#e0f7fa]">
+      <div class="hero mt-7">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img src="../components/icons/rumah.jpeg" class="max-w-sm rounded-lg" />
+          <div class="lg:mr-88">
+            <h1 class="text-5xl font-bold">Find Your House Price</h1>
+            <button class="mt-20 btn btn-primary bg-[#138fac] hover:text-yellow-200">
+              Try Now!!!
+            </button>
+          </div>
         </div>
-        <router-link
-          to="/prediksi"
-          class="inline-block mt-6 bg-[#138fac] text-white py-2 px-6 rounded-xl hover:bg-yellow-500 transition-colors duration-300"
-        >
-          Coba Sekarang
-        </router-link>
       </div>
-
-      <div class="w-full md:w-[400px] h-[200px] md:h-[250px] bg-[#138fac] rounded-2xl"></div>
-    </section>
+    </div>
   </LayoutDefault>
 </template>
