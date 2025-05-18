@@ -1,53 +1,33 @@
-<script setup>
-import LayoutDefault from '../components/LayoutDefault.vue'
-import BenefitView from './BenefitView.vue'
-import AlgoritmaView from './AlgoritmaView.vue'
-import ProfileView from './ProfileView.vue'
-import FaqView from './FaqView.vue'
-</script>
-
 <template>
-  <LayoutDefault>
-    <div class="overflow-x-hidden">
-      <section class="mt-3">
-        <h2 class="text-3xl font-bold text-center">About</h2>
+  <section class="py-16 md:py-32">
+    <div class="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
+      <h2 class="relative z-10 max-w-xl text-3xl font-bold lg:text-5xl">About The Project</h2>
 
-        <div class="sm:w-[90%] md:w-[800px] sm:h-[500px] md:h-[400px] bg-[#138fac] rounded-2xl">
-          <h3 class="text-white text-justify text-1xl font-medium mt-3 px-9 pt-5">
-            Kebutuhan akan rumah yang menjadi kebutuhan primer manusia semakin meningkat, terutama
-            di kota besar seperti di Surabaya. DPD Asosiasi Real Estat Broker Indonesia (AREBI)
-            Jatim mencatat rata-rata penjualan hunian per bulan mencapai 400 unit pada tahun 2024
-            dengan 40 persen berada di wilayah Surabaya Barat. Sebagai salah satu kota metropolitan
-            di Indonesia, Surabaya memiliki dinamika pasar yang kompleks, dipengaruhi oleh berbagai
-            faktor, seperti banyak nya kamar, kamar mandi, kapasitas garasi, luas area, dan luas
-            bangunan. Namun, menentukan harga harga rumah yang tepat seringkali menjadi tantangan,
-            baik bagi pembeli maupun penjual. Ketidaksesuaian antara harga pasar dan ekspektasi
-            sering terjadi, yang dapat berdampak pada keputusan investasi dan efisiensi transaksi
-            properti. Oleh karena itu, diperlukan pendekatan yang lebih sistematis untuk
-            memperkirakan harga rumah berdasarkan kondisi tertentu, seperti banyak nya kamar, kamar
-            mandi, kapasitas garasi, luas area, dan luas bangunan. Penggunaan model machine learning
-            seperti random forest menawarkan solusi potensial dalam memprediksi harga rumah secara
-            akurat. Dengan menganalisis data yang ada di internet, metode ini mampu memberikan
-            estimasi harga yang lebih objektif dan dapat diandalkan.
-          </h3>
+      <div class="relative md:grid md:grid-cols-2 md:items-center md:gap-10">
+        <div class="relative z-10 space-y-4">
+          <p class="text-body">
+            Lyra is evolving to be more than just the models.
+            <span class="text-title font-medium">It supports an entire ecosystem</span> — from
+            products innovate.
+          </p>
+          <p>
+            It supports an entire ecosystem — from products to the APIs and platforms helping
+            developers and businesses innovate.
+          </p>
         </div>
-      </section>
 
-      <section id="benefit" class="mt-2 min-h-screen">
-        <BenefitView />
-      </section>
-
-      <section id="algortima" class="mt-2 min-h-screen">
-        <AlgoritmaView />
-      </section>
-
-      <section id="profile" class="mt-2 min-h-screen">
-        <ProfileView />
-      </section>
-
-      <section id="faq" class="mt-2 min-h-screen">
-        <FaqView />
-      </section>
+        <div class="mt-10 md:mt-0">
+          <div class="bg-white relative rounded-2xl p-2">
+            <img
+              src="../components/icons/logo RO coba.png"
+              alt="payments illustration light"
+              class="rounded-[12px] shadow dark:hidden"
+              width="500"
+              height="929"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-  </LayoutDefault>
+  </section>
 </template>
